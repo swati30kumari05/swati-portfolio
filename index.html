@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swati Kumari | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Swati Kumari</a>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#map-explorer">Map Explorer</a>
+        <a href="#experience">Experience</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">AI / ML • Web Tech • Remote Sensing</p>
+          <h1>Building thoughtful and practical technology with clarity.</h1>
+          <p class="hero-text">
+            I’m Swati Kumari, a Computer Science student focused on AI/ML, software development, and geospatial applications. I enjoy building elegant digital solutions that combine clean engineering with meaningful outcomes.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>IIT Bombay</strong>
+              <span>BodhiTree Coder Program</span>
+            </div>
+            <div class="stat-card">
+              <strong>AI / ML</strong>
+              <span>Crop Classification & Prediction Projects</span>
+            </div>
+            <div class="stat-card">
+              <strong>Problem Solving</strong>
+              <span>DSA, coding rounds, and practical builds</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="profile-frame">
+            <img src="profile.jpg" alt="Swati Kumari profile" class="profile-img">
+          </div>
+          <h2>Swati Kumari</h2>
+          <p class="hero-role">B.Tech CSE Student | AI/ML | Web Tech</p>
+
+          <div class="icon-links">
+            <a href="https://github.com/swati30kumari05" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/swati-kumari2009" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://leetcode.com/u/swati_kumari_05/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+            <a href="mailto:swati.30.kumari.05@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="about">
+      <div class="container split-grid">
+        <div class="section-intro reveal">
+          <p class="section-tag">About Me</p>
+          <h3>Computer Science student exploring AI, geospatial systems, and practical software development.</h2>
+        </div>
+        <div class="card reveal">
+          <p>Computer Science student interested in AI/ML and modern technologies, with experience building AI-driven and web-based solutions. Strong in programming, databases, and problem-solving, and motivated to grow through collaborative, meaningful work.</p>
+          <p>I am currently pursuing B.Tech in Computer Science at IILM University, Greater Noida. My interests include machine learning, software systems, remote sensing, and building responsive, user-friendly digital products.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Skills</p>
+          <h2>Technical stack</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card reveal">
+            <h3>Programming</h3>
+            <ul>
+              <li>C</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>Java</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Database</h3>
+            <ul>
+              <li>MySQL / DBMS</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>AI / ML</h3>
+            <ul>
+              <li>Machine Learning</li>
+              <li>NLP</li>
+              <li>Random Forest</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Google Earth Engine</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Projects</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image-box">
+              <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9af10bfa8a7eb044625403ccb4f9bef31ce83330.jpg" alt="Crop classification project image" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3>Crop Classification Using Sentinel-1 SAR Time-Series and Machine Learning</h3>
+              <p class="stack">Google Earth Engine • Python • Random Forest</p>
+              <p>Developed a crop classification workflow using Sentinel-1 SAR time-series data and Random Forest to identify crop types and generate crop maps for agricultural analysis.</p>
+              <ul>
+                <li>Overall Accuracy: 98.77%</li>
+                <li>Kappa Score: 0.98</li>
+                <li>Strong class-wise performance across multiple crop categories</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="map-explorer">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Interactive Feature</p>
+          <h2>Satellite Map Explorer</h2>
+        </div>
+
+        <div class="map-feature-grid reveal">
+          <div class="map-shell card no-pad">
+            <div class="map-topbar">
+              <div class="map-pill"><i class="fa-solid fa-satellite-dish"></i><span>Sentinel-1 SAR Explorer</span></div>
+              <div class="map-pill soft"><i class="fa-solid fa-brain"></i><span>Random Forest Simulation</span></div>
+            </div>
+            <div id="satelliteMap"></div>
+          </div>
+
+          <aside class="map-side-panel card">
+            <h3>Project context</h3>
+            <p>
+              This interactive explorer presents a simplified demonstration of my crop classification project using Sentinel-1 SAR time-series data and a Random Forest model.
+            </p>
+            <ul class="side-points">
+              <li>Toggle simulated SAR and crop classification layers.</li>
+              <li>Click crop zones to inspect crop type, confidence, and notes.</li>
+              <li>Click anywhere on the map to simulate a new crop prediction.</li>
+            </ul>
+
+            <div class="mini-model-box">
+              <h4>Model summary</h4>
+              <p>Input: Sentinel-1 SAR temporal signals</p>
+              <p>Model: Random Forest classifier</p>
+              <p>Output: Crop type map with confidence estimates</p>
+            </div>
+
+            <div class="prediction-box" id="predictionBox">
+              <h4>Live prediction</h4>
+              <p>Click anywhere on the map to simulate a prediction.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="extra-projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Additional Project</p>
+          <h3> Using machine learning </h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image-box">
+              <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/93d099d3e3d1812173134b2c39b0eb93e58679f6.jpg" alt="House price prediction project image" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3>House Price Prediction Model</h3>
+              <p class="stack">Python • Pandas • NumPy • Scikit-learn</p>
+              <p>Built a regression model to estimate house prices using cleaned tabular data and selected features.</p>
+              <ul>
+                <li>Structured data preprocessing</li>
+                <li>Feature selection and engineering</li>
+                <li>Model training and evaluation</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Experience</p>
+          <h2>Internship and learning</h2>
+        </div>
+
+        <div class="two-col-grid">
+          <div class="card reveal">
+            <h3>BodhiTree Coder Program</h3>
+            <p class="meta">Initiative by IIT Bombay</p>
+            <ul>
+              <li>Completed the BodhiTree coder program.</li>
+              <li>Selected after clearing the in-person coding round and interview.</li>
+              <li>Selected out of 3000 enrolled students.</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Winter Intern</h3>
+            <p class="meta">YBI Foundation • Oct 2025 – Nov 2025</p>
+            <ul>
+              <li>Completed training as a machine learning intern.</li>
+              <li>Built a foundation in feature engineering.</li>
+              <li>Explored AI and Generative AI techniques through practice.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="profiles">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Coding Profiles</p>
+          <h2>Problem solving and professional presence</h2>
+        </div>
+
+        <div class="three-col-grid">
+          <div class="card profile-box reveal">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Show your repositories, projects, and technical work.</p>
+            <a href="https://github.com/swati30kumari05" target="_blank" rel="noopener noreferrer" class="text-link">Open GitHub</a>
+          </div>
+
+          <div class="card profile-box reveal">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <h3>LinkedIn</h3>
+            <p>Show your professional profile and academic journey.</p>
+            <a href="https://www.linkedin.com/in/swati-kumari2009" target="_blank" rel="noopener noreferrer" class="text-link">Open LinkedIn</a>
+          </div>
+
+          <div class="card profile-box reveal">
+            <i class="fa-solid fa-code"></i>
+            <h3>LeetCode</h3>
+            <p>Highlight DSA practice and problem-solving consistency.</p>
+            <a href="https://leetcode.com/u/swati_kumari_05/" target="_blank" rel="noopener noreferrer" class="text-link">Open LeetCode</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="contact">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="section-tag">Contact</p>
+          <h2>Let’s connect</h2>
+        </div>
+
+        <div class="card contact-card reveal">
+          <p><strong>Email:</strong> <a href="mailto:swati.30.kumari.05@gmail.com">swati.30.kumari.05@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:9661330527">9661330527</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/swati-kumari2009" target="_blank" rel="noopener noreferrer">swati-kumari2009</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
